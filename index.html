@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  
+    
+
+    <section id="calc" style="">
+        <div class="container">
+            <form action="">
+                <div class="text-input">
+                    <input type="text" name="displayyy">
+                </div>            
+                <div class="buttons">
+                    <div class="row-button">
+                        <input type="button" onclick="displayyy.value= '' "  value="AC" class="math-operators">
+                        <input type="button"  onclick="displayyy.value= displayyy.value.slice(0, -1)"  value="DE" class="math-operators">
+                        <input type="button"  onclick="displayyy.value += '.' "  value="." class="math-operators">
+                        <input type="button"  onclick="displayyy.value += '/' "  value="/"  class="math-operators">
+                    </div>
+                    <div class="row-button">
+                        <input type="button"  onclick="displayyy.value += '7' " value="7">
+                        <input type="button"  onclick="displayyy.value += '8' " value="8">
+                        <input type="button"  onclick="displayyy.value += '9' " value="9">
+                        <input type="button"  onclick="displayyy.value += '*' " value="*" class="math-operators">
+                    </div>
+                    <div class="row-button">
+                        <input type="button"  onclick="displayyy.value += '4' "  value="4">
+                        <input type="button"  onclick="displayyy.value += '5' "  value="5">
+                        <input type="button"  onclick="displayyy.value += '6' "  value="6">
+                        <input type="button"  onclick="displayyy.value += '-' "  value="-" class="math-operators">
+                    </div>
+                    <div class="row-button">
+                        <input type="button"  onclick="displayyy.value += '1' "  value="1">
+                        <input type="button"  onclick="displayyy.value += '2' "  value="2">
+                        <input type="button"  onclick="displayyy.value += '3' " value="3">
+                        <input type="button"  onclick="displayyy.value += '+' " value="+"  class="math-operators">
+                    </div>
+                    <div class="row-button">
+                        <input type="button"  onclick="displayyy.value += '00' " value="00">
+                        <input type="button"  onclick="displayyy.value += '0' " value="0">
+                        <input style="width:17%;" type="button"  onclick="displayyy.value = eval(displayyy.value)" value="=" class="math-operators">
+                        <!-- <input type="button" value=""> -->
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </section>
+    
+
+
+
+
+    <script src="/javas/java.js"></script>
+</body>
+</html>
